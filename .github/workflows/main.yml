@@ -1,0 +1,10 @@
+name: GitHub CI / CD Demo
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: [push]
+jobs:
+  Build:
+    runs-on: myself-hosted
+    steps:
+      - run: echo "Buid işlemi başladı"
+      - run: dotnet build
+      - run: echo "Build işlemi tamamlandı"

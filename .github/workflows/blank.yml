@@ -5,6 +5,15 @@ jobs:
   Build:
     runs-on: self-hosted
     steps:
+
+      - name: repo
+        uses: actions/checkout@v4
+        
+      - name: Setup .NET Core SDK
+        uses: actions/setup-dotnet@v3.4.2
+        
+      
+        
       - run: echo "Buid işlemi başladı"
-      - run: mkdir -p C:\Users\sandi\Desktop -n deploy-directory
+      - run: dotnet build
       - run: echo "Build işlemi tamamlandı"

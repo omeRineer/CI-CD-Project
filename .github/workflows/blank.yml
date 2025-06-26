@@ -1,6 +1,6 @@
 name: GitHub CI / CD Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: [workflow_dispatch]
+on: [push]
 jobs:
   Build:
     runs-on: self-hosted

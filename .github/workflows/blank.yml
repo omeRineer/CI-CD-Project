@@ -3,17 +3,8 @@ run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [workflow_dispatch]
 jobs:
   Build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
-
-      - name: repo
-        uses: actions/checkout@v4
-        
-      - name: Setup .NET Core SDK
-        uses: actions/setup-dotnet@v3.4.2
-        
-      
-        
       - run: echo "Buid işlemi başladı"
-      - run: dotnet build
+      - run: mkdir tteest-deploy
       - run: echo "Build işlemi tamamlandı"

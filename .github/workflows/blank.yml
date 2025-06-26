@@ -1,0 +1,10 @@
+name: GitHub CI / CD Demo
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: [workflow_dispatch]
+jobs:
+  Build:
+    runs-on: self-hosted
+    steps:
+      - run: echo "Buid işlemi başladı"
+      - run: mkdir -p C:\Users\sandi\Desktop -n deploy-directory
+      - run: echo "Build işlemi tamamlandı"
